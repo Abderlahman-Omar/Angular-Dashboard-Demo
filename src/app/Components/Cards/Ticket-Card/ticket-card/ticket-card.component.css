@@ -1,6 +1,9 @@
 .bgImage {
   background-color: #8a75f8;
-
+  background-image: url("../../../../../assets/sssquiggly.svg");
+  background-size: cover;
+  background-position: center;
+  /* clip-path: circle(20px at right); */
   /* background-image: url("../../../../../assets/curved\ lines.jpeg"); */
 }
 /* .fontF {
@@ -12,7 +15,6 @@
 hr {
   border-top: 1px dashed white;
 }
-
 
 .icons {
   width: 32;
@@ -28,4 +30,16 @@ hr {
 
   border: 0.824934px solid rgba(61, 64, 91, 0.16);
   transform: matrix(-0.95, -0.3, -0.22, 0.98, 0, 0);
+}
+.shape {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  clip-path: circle(20px at right);
+}
+.shape2 {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  clip-path: circle(20px at left);
 }

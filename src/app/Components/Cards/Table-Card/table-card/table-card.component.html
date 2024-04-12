@@ -1,5 +1,13 @@
-<div class="card">
-  <p-table [value]="products" [tableStyle]="{ 'min-width': '60rem' }">
+<div class="card overflow-x-auto shadow-lg">
+  <p-table
+    [value]="products"
+    [paginator]="true"
+    [rows]="5"
+    [showCurrentPageReport]="true"
+    [tableStyle]="{ 'min-width': '60rem' }"
+    currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+    [rowsPerPageOptions]="[5, 10, 20]"
+  >
     <ng-template pTemplate="header">
       <tr>
         <th class="font-normal text-gray-500 newFonts" style="width: 15%">
@@ -38,7 +46,7 @@
         <td class="flex flex-row justify-between">
           <div>
             <svg
-              class="cursor-pointer"
+              class="cursor-pointer transition duration-150 ease-in-out hover:translate-y-1"
               width="40"
               height="40"
               viewBox="0 0 18 18"
@@ -107,7 +115,7 @@
         </td>
 
         <td class="text-gray-900 newFonts">{{ product.ticketNumber }}</td>
-        <td class="flex flex-row items-center justify-center gap-2 h-full">
+        <td class="flex items-center justify-center gap-2">
           <div class="flex flex-col">
             <span class="text-gray-900 newFonts">{{ product.name }}</span>
             <span class="text-gray-500 newFonts">{{
@@ -117,10 +125,23 @@
 
           <img [alt]="product.name" src="{{ product.image }}" />
         </td>
-        <!-- <td>{{ product.name }}</td> -->
 
         <td class="text-gray-900 newFonts">{{ product.code }}</td>
       </tr>
+    </ng-template>
+    <ng-template pTemplate="paginatorleft">
+      <p-button
+        type="button"
+        icon="pi pi-plus"
+        styleClass="p-button-text"
+      ></p-button>
+    </ng-template>
+    <ng-template pTemplate="paginatorright">
+      <p-button
+        type="button"
+        icon="pi pi-cloud"
+        styleClass="p-button-text"
+      ></p-button>
     </ng-template>
   </p-table>
 </div>

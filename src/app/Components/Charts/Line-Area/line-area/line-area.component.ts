@@ -37,11 +37,6 @@ export class LineAreaComponent implements OnInit {
         data: [24, 35, 11, 27, 11, 23, 6, 21, 11, 27, 13, 17],
         color: '#baaef6',
       },
-      // {
-      //   name: 'TEAM B',
-      //   type: 'line',
-      //   data: [55, 69, 45, 61, 43, 54, 37, 52, 44, 61, 43],
-      // },
     ]),
       (this.chart = {
         height: 260,

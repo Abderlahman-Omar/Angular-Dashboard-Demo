@@ -12,3 +12,6 @@
 .fonts {
   font-family: "Neo Sans Arabic", "Inter", sans-serif;
 }
+body {
+  background-color: #f4f5f7;
+}

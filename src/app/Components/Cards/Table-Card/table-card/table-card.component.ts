@@ -14,7 +14,7 @@ export class TableCardComponent implements OnInit {
   constructor(private productService: ProductService) {}
 
   ngOnInit() {
-    this.productService.getProductsMini().then((data) => {
+    this.productService.getProductsLarge().then((data) => {
       console.log(data);
 
       this.products = data;
