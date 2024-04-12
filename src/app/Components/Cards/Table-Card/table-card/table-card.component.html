@@ -26,10 +26,14 @@
         </th>
         <th
           pSortableColumn="price"
-          class="font-normal text-gray-500 newFonts"
+          class="font-normal relative text-gray-500 newFonts"
           style="width: 10%"
         >
-          قيمة التذكرة <p-sortIcon field="price"></p-sortIcon>
+          <p-sortIcon
+            field="price"
+            class="absolute -translate-x-9 translate-y-1"
+          ></p-sortIcon>
+          <span>قيمة التذكرة</span>
         </th>
         <th class="font-normal text-gray-500 newFonts" style="width: 10%">
           رقم التذكرة

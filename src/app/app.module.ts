@@ -17,6 +17,7 @@ import { MidPageComponent } from './Components/Mid-Page/mid-page/mid-page.compon
 import { TooltipModule } from 'primeng/tooltip';
 import { ProductService } from '../service/productservice';
 import { ButtonModule } from 'primeng/button';
+import { HeaderComponent } from './Components/Header/header/header.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ButtonModule } from 'primeng/button';
     TicketCardComponent,
     TableCardComponent,
     MidPageComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
