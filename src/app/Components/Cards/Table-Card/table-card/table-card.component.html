@@ -1,5 +1,6 @@
 <div class="card overflow-x-auto shadow-lg">
   <p-table
+    styleClass="p-datatable-gridlines"
     [value]="products"
     [paginator]="true"
     [rows]="5"
@@ -8,10 +9,10 @@
   >
     <ng-template pTemplate="header">
       <tr>
-        <th class="font-normal text-gray-500 newFonts" style="width: 15%">
+        <th class="font-normal text-gray-500 newFonts" style="width: 17%">
           التذكرة
         </th>
-        <th class="font-normal text-gray-500 newFonts" style="width: 10%">
+        <th class="font-normal text-gray-500 newFonts" style="width: 8%">
           عدد مرات الشراء
         </th>
         <th class="font-normal text-gray-500 newFonts" style="width: 8%">
@@ -118,7 +119,7 @@
           {{ product.ticketNumber }}
         </td>
         <td
-          class="flex items-center justify-center gap-2 absolute translate-y-3"
+          class="flex items-center justify-center gap-2 absolute translate-y-1"
         >
           <div class="flex flex-col">
             <span class="text-gray-900 newFonts font-normal">{{
