@@ -3,16 +3,48 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {
+  HttpClientModule,
+  provideHttpClient,
+  withFetch,
+} from '@angular/common/http';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { LineAreaComponent } from './Components/Charts/Line-Area/line-area/line-area.component';
+import { TicketCardComponent } from './Components/Cards/Ticket-Card/ticket-card/ticket-card.component';
+import { TableCardComponent } from './Components/Cards/Table-Card/table-card/table-card.component';
+import { TableModule } from 'primeng/table';
+import { QRCodeModule } from 'angularx-qrcode';
+import { MidPageComponent } from './Components/Mid-Page/mid-page/mid-page.component';
+import { TooltipModule } from 'primeng/tooltip';
+import { ProductService } from '../service/productservice';
+import { PrimeIcons } from 'primeng/api';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LineAreaComponent,
+    TicketCardComponent,
+    TableCardComponent,
+    MidPageComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    RouterLink,
+    RouterLinkActive,
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgApexchartsModule,
+    TableModule,
+    QRCodeModule,
+    TooltipModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [ProductService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

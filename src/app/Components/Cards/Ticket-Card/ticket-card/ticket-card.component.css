@@ -1,0 +1,31 @@
+.bgImage {
+  background-color: #8a75f8;
+
+  /* background-image: url("../../../../../assets/curved\ lines.jpeg"); */
+}
+/* .fontF {
+  font-family: "Neo Sans Arabic, Inter";
+} */
+.props {
+  margin-left: 50%;
+}
+hr {
+  border-top: 1px dashed white;
+}
+
+
+.icons {
+  width: 32;
+  height: 32;
+}
+/* Vector */
+.lines {
+  position: absolute;
+  left: 1.51%;
+  right: 50.02%;
+  top: 3.17%;
+  bottom: 50.05%;
+
+  border: 0.824934px solid rgba(61, 64, 91, 0.16);
+  transform: matrix(-0.95, -0.3, -0.22, 0.98, 0, 0);
+}

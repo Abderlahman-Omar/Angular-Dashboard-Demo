@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Neo Sans Arabic", "Inter", sans-serif;
+}
+.fonts {
+  font-family: "Neo Sans Arabic", "Inter", sans-serif;
+}
