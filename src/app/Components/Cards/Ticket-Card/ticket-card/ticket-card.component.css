@@ -12,8 +12,8 @@
 .props {
   margin-left: 50%;
 }
-hr {
-  border-top: 1px dashed white;
+.hrStyle {
+  border-top: 5px dashed white;
 }
 
 .icons {
@@ -35,11 +35,11 @@ hr {
   width: 40px;
   height: 40px;
   background-color: white;
-  clip-path: circle(20px at right);
+  clip-path: circle(20px at left);
 }
 .shape2 {
   width: 40px;
   height: 40px;
   background-color: white;
-  clip-path: circle(20px at left);
+  clip-path: circle(20px at right);
 }
